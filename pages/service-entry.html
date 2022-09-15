@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/service-page.css">
+    <title>Service</title>
+</head>
+<body>
+<header class="header">
+    <div class="header_content">
+        <div class="header__logo">
+            <a href="../index.html"><img src="../png/Service-entry/Header/Logo.svg" alt="Logo"></a>
+            <button class="navbar-toggler">
+                <span class="navbar-toggler-custom-icon"></span>
+            </button>
+        </div>
+        <div class="header__nav-bar">
+            <div class="nav-lang">
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-uk-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                                type="button" role="tab" aria-controls="pills-home" aria-selected="true">УК
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-ru-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                                type="button" role="tab" aria-controls="pills-profile" aria-selected="false">РУ
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-en-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                                aria-selected="false">EN
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-links">
+                <ul class="items">
+                    <li class="item item_hidden">
+                        <a href="" class="adress">Kyiv, Mechnikova str, 14/1</a>
+                    </li>
+                    <li class="item">
+                        <a href="" class="phone">0800 211 927</a>
+                    </li>
+                    <li class="item item_hidden">
+                        <a href=""><img src="../png/facebook.svg" alt="facebook"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-pages">
+                <ul class="pages">
+                    <li class="page">
+                        <a href="">about us</a>
+                    </li>
+                    <li class="page page_active">
+                        <a href="../pages/services.html">services</a>
+                    </li>
+                    <li class="page">
+                        <a href="">team</a>
+                    </li>
+                    <li class="page">
+                        <a href="../pages/publications.html">publications</a>
+                    </li>
+                    <li class="page">
+                        <a href="">contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<main class="main">
+    <div class="main-content-bg">
+        <section class="intro-section">
+            <div class="intro-section_content">
+                <div class="heading_content">
+                    <div class="intro__image">
+                        <img src="../png/Services-img/Icon1.svg" alt="Icon1">
+                    </div>
+                    <div class="intro__heading_service hero">
+                        IT and e-commerce
+                    </div>
+                    <div class="intro__subheading">
+                        <p>
+                            An endless stream of contracts, tax issues, labor relations, corporate papers - legal work
+                            distracts you from doing business. But there is not much work to do to hire an in-house
+                            lawyer. <br><br>
+                            In addition, over time, the work will become the same type and uninteresting for a full-time
+                            lawyer. And we know very well how difficult it is to find a good candidate with experience
+                            in the field of information technology in Ukraine.
+                        </p>
+                    </div>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="intro__button btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop">Free consultation
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                         tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <div class="hero">
+                                        <h1 class="modal-title " id="staticBackdropLabel">We would like to help you</h1>
+                                    </div>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form class="form" action="" method="post" target="_blank">
+                                        <input class="form__input" type="text" placeholder="Name" id="name">
+                                        <br>
+                                        <textarea class="form__input" type="text" placeholder="Message" id="message"></textarea>
+                                        <br>
+                                        <label class="form__label" for="number">How to answer you?</label>
+                                        <br>
+                                        <input class="form__input" type="text" placeholder="Phone number" id="number">
+                                        <br>
+                                        <input class="form__input" type="email" placeholder="Email" id="email">
+                                        <div class="modal-footer">
+                                            <button type="submit" class="btn btn-primary" value="submit">Send message</button>
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="heading_lists">
+                    <h3 class="heading">Services in this area:</h3>
+                    <div class="items-flex">
+                        <ul class="item unordered_list">
+                            <li class="list-item">
+                                <span>support of investment projects for the development of port infrastructure;</span>
+                            </li>
+                            <li class="list-item">
+                                <span>certification of GTS, entering information about them in mandatory databases and
+                                registers;</span>
+                            </li>
+                            <li class="list-item">
+                                <span>registration of permits for the construction of port terminals;</span>
+                            </li>
+                            <li class="list-item">
+                                <span>registration of permit and other mandatory documentation required for carrying out
+                                activities in the port (emission permit, conclusion on EIA, RTC, etc.);</span>
+                            </li>
+                        </ul>
+                        <ul class="item unordered_list">
+                            <li class="list-item">
+                                <span>support of procedures related to the lease of state property in the port;</span>
+                            </li>
+                            <li class="list-item">
+                                <span>support of procedures related to confirmation of the status of port operator,
+                                    maritime agent, foreign sailing line;</span>
+                            </li>
+                            <li class="list-item">
+                                <span>support of procedures related to the inclusion of the company within the port;</span>
+                            </li>
+                            <li class="list-item">
+                                <span>appeals against actions related to the illegal imposition of services in the port
+                                    by monopoly companies.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="main-content-bg_underline">
+        <div class="underline_grey">
+        </div>
+        <div class="underline_soft-grey">
+        </div>
+    </div>
+    <div class="main-content">
+        <section class="publications-section">
+            <div class="publications-section_content">
+                <div class="link">
+                    <a href="" class="link_text">Publications
+                        <svg class="arrow-svg" width="12" height="13" viewBox="0 0 12 13"
+                             fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.5 2L8 6.5L3.5 11" stroke-width="2"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="hero">
+                    Recommended
+                </div>
+                <div class="publications-panel">
+                    <div class="item">
+                        <div class="item-img equity-associate-img"></div>
+                        <div class="link">
+                            <a href="" class="link_text item-link">Equity associate</a>
+                        </div>
+                        <span class="item-date">April 22</span>
+                        <div class="item-separator"></div>
+                        <div class="item-text">
+                            <p>
+                                I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering
+                                my parents told me that if I…
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-img gdpr-img"></div>
+                        <div class="link">
+                            <a href="" class="link_text item-link">Penalty for the Good Corporation: what will happen to
+                                Google and others for violating the GDPR</a>
+                        </div>
+                        <span class="item-date">September 29</span>
+                        <div class="item-separator"></div>
+                        <div class="item-text">
+                            <p>
+                                And why the recovery of 50 million euros could be a fateful precedent According to
+                                Mind.ua January 21 National Commission for Data Protection.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item item_big">
+                        <div class="item-img millennial-testament-img"></div>
+                        <div class="link">
+                            <a href="" class="link_text item-link">Millennial Testament</a>
+                        </div>
+                        <span class="item-date">August 19</span>
+                        <div class="item-separator"></div>
+                        <div class="item-text">
+                            <p>
+                                What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A
+                                typical legacy of the Ukrainian generation X looks like this: an apartment in…
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-separator"></div>
+        </section>
+    </div>
+</main>
+<footer class="footer">
+    <div class="footer_content">
+        <div class="items">
+            <div class="item">
+                <div class="item-block">
+                    <a class="item-address" href="">Kyiv, Mechnikova str, 14/1</a>
+                    <a class="item-link-map" href="">On map</a>
+                </div>
+                <div class="item-block">
+                    <a class="item-link-facebook" href=""><img src="../png/facebook-blue.svg" alt="facebook"></a>
+                    <a class="item-phone" href="">0800 211 927</a>
+                    <a class="item-mail" href="">contact@forstudy.space</a>
+                </div>
+            </div>
+            <div class="item item-company item-block">
+                © 2021 HLEGAL Law company, LLC
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
