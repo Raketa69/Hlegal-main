@@ -587,6 +587,7 @@
         .item-img {
           height: 200px;
           margin-bottom: 30px;
+          border-radius: 8px 8px 0px 0px !important;
         }
 
         .equity-associate-img {
@@ -875,7 +876,12 @@
       width: 100%;
       margin-top: 0;
     }
-
+    .header__logo {
+      .header_content__img_mobile {
+        width: 80%;
+        padding-top: 20px;
+      }
+    }
     .navbar-toggler {
       background: url(../png/Hamburger.svg) no-repeat center;
       background-size: cover;

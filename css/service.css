@@ -724,6 +724,7 @@ a {
 .publications-section .publications-section_content .publications-panel .item .item-img {
   height: 200px;
   margin-bottom: 30px;
+  border-radius: 8px 8px 0px 0px !important;
 }
 .publications-section .publications-section_content .publications-panel .item .equity-associate-img {
   background: url(../png/Cover-pub1.png) no-repeat center;
@@ -973,6 +974,10 @@ a {
   .header .header_content {
     width: 100%;
     margin-top: 0;
+  }
+  .header .header__logo .header_content__img_mobile {
+    width: 80%;
+    padding-top: 20px;
   }
   .header .navbar-toggler {
     background: url(../png/Hamburger.svg) no-repeat center;
