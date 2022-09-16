@@ -4,71 +4,89 @@
 @import 'publications-page';
 @import url("https://fonts.googleapis.comcss2family=Montserratwght@400;700&display=swap");
 
+.footer_content {
+  padding-top: 60px;
+}
+.quality-section_content {
+  width: 70%;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 60px;
+
+  .hero {
+    padding-left: 60px;
+  }
+}
+
 .intro-section {
   padding-top: 30px;
+}
 
-  .flex-panel {
-    display: flex;
+.flex-panel {
+  display: flex;
 
-    .item_text {
-      width: 70%;
-      padding-right: 30px;
+  .item_text {
+    width: 70%;
+    padding-right: 30px;
 
-      .hero {
-        padding-bottom: 28px;
-      }
+    .hero {
+      padding-bottom: 28px;
+    }
+  }
+
+  .item_bonus {
+    width: 30%;
+    padding-left: 30px;
+    border-left: 4px $grey-separator-color solid;
+
+    p {
+      color: $main-color;
     }
 
-    .item_bonus {
-      width: 30%;
-      padding-left: 30px;
-      border-left: 4px $grey-separator-color solid;
-      p {
-        color: $main-color;
-      }
+  }
 
+  .item {
+    text-align: left;
+
+    p {
+      font-size: 19px;
+      line-height: 30px;
     }
 
-    .item {
-      text-align: left;
+    .row {
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: start;
+      padding-left: 5px;
+    }
 
-      p {
-        font-size: 19px;
-        line-height: 30px;
-      }
+    .item__img {
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+    }
 
-      .row {
-        flex-wrap: nowrap;
-        align-items: center;
-        justify-content: start;
-        padding-left: 5px;
-      }
+    .experience {
+      background: url("../png/About/Experience.svg") no-repeat center;
+      background-size: 100%;
+    }
 
-      .item__img {
-        display: inline-block;
-        width: 32px;
-        height: 32px;
-      }
+    .clients {
+      background: url("../png/About/Clients.svg") no-repeat center;
+      background-size: 100%;
+    }
 
-      .experience {
-        background: url("../png/About/Experience.svg") no-repeat center;
-        background-size: 100%;
-      }
-
-      .clients {
-        background: url("../png/About/Clients.svg") no-repeat center;
-        background-size: 100%;
-      }
-
-      .probono {
-        background: url("../png/About/Probono.svg") no-repeat center;
-        background-size: 100%;
-      }
+    .probono {
+      background: url("../png/About/Probono.svg") no-repeat center;
+      background-size: 100%;
     }
   }
 }
 
+
 .intro-team-section_content {
+  text-align: center;
   margin-top: 60px;
   background: url("../png/Publications/Team.png") no-repeat center;
   background-size: cover;
@@ -77,8 +95,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
   .heading {
+
     font-weight: 700;
+    text-align: center;
     font-size: 96px;
     line-height: 117px;
     letter-spacing: 63px;
@@ -88,24 +109,92 @@
     text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);
   }
 }
+
+.carousel-section_content {
+  width: 100%;
+  margin: 0;
+  padding-left: 60px;
+  padding-right: 60px;
+  background: $grey-bg-color;
+
+  .carousel-indicators {
+    margin-bottom: 0;
+    background: $grey-bg-color;
+  }
+
+  .heading {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $main-color;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+
+  .carousel-item {
+    background: $grey-bg-color;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .carousel-item_content {
+    justify-content: space-between;
+    background: $grey-bg-color;
+
+    .item {
+      // background: white;
+      padding: 25px;
+      width: 20%;
+      background: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
 @media screen and (max-width: 1440px) {
   .intro-team-section_content {
     height: 438px;
 
   }
 }
+
 @media screen and (max-width: 1024px) {
+  .quality-section_content {
+    width: 90%;
+  }
   .intro-team-section_content {
     height: 311.47px;
+
     .heading {
       font-size: 86px;
       line-height: 105px;
     }
   }
 }
+
 @media screen and (max-width: 768px) {
+  .carousel-section_content .carousel-item_content {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .quality-section_content {
+    .flex-panel .item_text {
+      width: 100%;
+      padding-right: 0;
+
+      .hero {
+        padding: 0;
+      }
+
+    }
+  }
   .intro-team-section_content {
-    height:  233.6px;
+    height: 233.6px;
+
     .heading {
       font-size: 46px;
       line-height: 56px;
@@ -125,11 +214,23 @@
     }
   }
 }
+
 @media screen and (max-width: 375px) {
+  .carousel-section_content .carousel-item_content .item {
+    width: 100%;
+  }
+  .quality-section_content {
+    width: 100%;
+    padding-bottom: 60px;
+    padding-left: 30px;
+  }
   .intro-team-section_content {
-    height:  114.06px;
+    height: 114.06px;
+
     .heading {
+
       font-size: 36px;
+      letter-spacing: 10px;
       line-height: 44px;
     }
   }

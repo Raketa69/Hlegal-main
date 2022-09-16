@@ -3482,59 +3482,76 @@ a {
     padding-top: 20px;
   }
 }
+.footer_content {
+  padding-top: 60px;
+}
+
+.quality-section_content {
+  width: 70%;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 60px;
+}
+.quality-section_content .hero {
+  padding-left: 60px;
+}
+
 .intro-section {
   padding-top: 30px;
 }
-.intro-section .flex-panel {
+
+.flex-panel {
   display: flex;
 }
-.intro-section .flex-panel .item_text {
+.flex-panel .item_text {
   width: 70%;
   padding-right: 30px;
 }
-.intro-section .flex-panel .item_text .hero {
+.flex-panel .item_text .hero {
   padding-bottom: 28px;
 }
-.intro-section .flex-panel .item_bonus {
+.flex-panel .item_bonus {
   width: 30%;
   padding-left: 30px;
   border-left: 4px #E6E6F0 solid;
 }
-.intro-section .flex-panel .item_bonus p {
+.flex-panel .item_bonus p {
   color: #323264;
 }
-.intro-section .flex-panel .item {
+.flex-panel .item {
   text-align: left;
 }
-.intro-section .flex-panel .item p {
+.flex-panel .item p {
   font-size: 19px;
   line-height: 30px;
 }
-.intro-section .flex-panel .item .row {
+.flex-panel .item .row {
   flex-wrap: nowrap;
   align-items: center;
   justify-content: start;
   padding-left: 5px;
 }
-.intro-section .flex-panel .item .item__img {
+.flex-panel .item .item__img {
   display: inline-block;
   width: 32px;
   height: 32px;
 }
-.intro-section .flex-panel .item .experience {
+.flex-panel .item .experience {
   background: url("../png/About/Experience.svg") no-repeat center;
   background-size: 100%;
 }
-.intro-section .flex-panel .item .clients {
+.flex-panel .item .clients {
   background: url("../png/About/Clients.svg") no-repeat center;
   background-size: 100%;
 }
-.intro-section .flex-panel .item .probono {
+.flex-panel .item .probono {
   background: url("../png/About/Probono.svg") no-repeat center;
   background-size: 100%;
 }
 
 .intro-team-section_content {
+  text-align: center;
   margin-top: 60px;
   background: url("../png/Publications/Team.png") no-repeat center;
   background-size: cover;
@@ -3546,6 +3563,7 @@ a {
 }
 .intro-team-section_content .heading {
   font-weight: 700;
+  text-align: center;
   font-size: 96px;
   line-height: 117px;
   letter-spacing: 63px;
@@ -3555,12 +3573,55 @@ a {
   text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);
 }
 
+.carousel-section_content {
+  width: 100%;
+  margin: 0;
+  padding-left: 60px;
+  padding-right: 60px;
+  background: #F5F5FA;
+}
+.carousel-section_content .carousel-indicators {
+  margin-bottom: 0;
+  background: #F5F5FA;
+}
+.carousel-section_content .heading {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #323264;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.carousel-section_content .carousel-item {
+  background: #F5F5FA;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.carousel-section_content .carousel-item_content {
+  justify-content: space-between;
+  background: #F5F5FA;
+}
+.carousel-section_content .carousel-item_content .item {
+  padding: 25px;
+  width: 20%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media screen and (max-width: 1440px) {
   .intro-team-section_content {
     height: 438px;
   }
 }
 @media screen and (max-width: 1024px) {
+  .quality-section_content {
+    width: 90%;
+  }
+
   .intro-team-section_content {
     height: 311.47px;
   }
@@ -3570,6 +3631,19 @@ a {
   }
 }
 @media screen and (max-width: 768px) {
+  .carousel-section_content .carousel-item_content {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .quality-section_content .flex-panel .item_text {
+    width: 100%;
+    padding-right: 0;
+  }
+  .quality-section_content .flex-panel .item_text .hero {
+    padding: 0;
+  }
+
   .intro-team-section_content {
     height: 233.6px;
   }
@@ -3592,11 +3666,22 @@ a {
   }
 }
 @media screen and (max-width: 375px) {
+  .carousel-section_content .carousel-item_content .item {
+    width: 100%;
+  }
+
+  .quality-section_content {
+    width: 100%;
+    padding-bottom: 60px;
+    padding-left: 30px;
+  }
+
   .intro-team-section_content {
     height: 114.06px;
   }
   .intro-team-section_content .heading {
     font-size: 36px;
+    letter-spacing: 10px;
     line-height: 44px;
   }
 }
