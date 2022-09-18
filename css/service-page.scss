@@ -1,12 +1,8 @@
 @import 'layout-styles';
 @import 'index';
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+@import 'header';
+@import "header-light";
+@import "footer";
 
 .main-content-bg {
   padding-top: 176px;

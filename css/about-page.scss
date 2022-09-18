@@ -1,12 +1,54 @@
-@charset "UTF-8";
+@use "header-light";
+@use "header";
+@use 'publications-page';
+
 @import "index";
-@import 'layout-styles';
-@import 'publications-page';
-@import url("https://fonts.googleapis.comcss2family=Montserratwght@400;700&display=swap");
+
+.header .navbar-toggler {
+  background: url(../png/Hamburger-dark.svg) no-repeat center;
+
+}
+
+.header .navbar-toggler {
+  background: url(../png/Hamburger-dark.svg) no-repeat center;
+
+}
+
+.items .item .adress, .items .item .phone {
+  color: $grey-text-color;
+}
+
+.main_content {
+  padding-top: 150px;
+}
+
+.publications-section {
+  background: $grey-bg-color !important;
+}
+
+.nav-pages .pages .page_active a {
+  color: $accent-color !important;
+}
+
+.nav-pages .pages .page a {
+  color: $active-regular-color;
+}
+
+.nav-link {
+  color: $grey-text-color !important;
+  padding: 5px 7px;
+}
+
+.intro-section_content {
+  height: auto;
+  padding-top: 30px;
+  text-align: center;
+}
 
 .footer_content {
   padding-top: 60px;
 }
+
 .quality-section_content {
   width: 70%;
   margin-top: 60px;

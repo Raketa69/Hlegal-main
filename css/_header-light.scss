@@ -1,0 +1,24 @@
+@use "header";
+@import "layout-styles";
+
+.header .navbar-toggler {
+  background: url(../png/Hamburger-dark.svg) no-repeat center;
+
+}
+
+.main_content {
+  padding-top: 150px;
+}
+
+.publications-section {
+  background: $grey-bg-color
+}
+
+.nav-pages .pages .page a {
+  color: $active-regular-color;
+}
+
+.nav-link {
+  color: $grey-text-color;
+  padding: 5px 7px;
+}

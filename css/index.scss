@@ -1,143 +1,11 @@
 @import 'layout-styles';
+@import 'header';
+@import "footer";
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-.header {
-  background: $gradient-superSoft-color;
-}
-
-.header_content {
-  margin-top: 50px;
-  right: 0;
-  left: 0;
-  margin-right: auto;
-  margin-left: auto;
-  width: 83.3%;
-  position: absolute;
-  z-index: 3;
-  display: flex;
-  justify-content: space-between;
-}
-
-.nav-pills {
-  font-family: 'Montserrat', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 15px;
-  identical-to-box: height;
-  text-align: center;
-  letter-spacing: 1px;
-}
-
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  background-color: $accent-color;
-}
-
-.nav-link:focus, .nav-link:hover {
-  color: $accent-color;
-}
-
-.nav-lang {
-  display: inline-block;
-}
-
-.nav-link {
-  color: white;
-  padding: 5px 7px;
-
-  .nav-link {
-    border-radius: 8px;
-  }
-}
-.page_active a {
-  transition: ease-in-out 0.3s;
-  text-underline-offset: 3px;
-  color: $accent-color !important;
-  background-size: 100% 100%;
-  background-position-x: left;
-}
-
-
-.items {
-  li:before {
-    color: $grey-separator-color;
-    content: "●";
-    padding-right: 6px;
-    padding-left: 6px;
-  }
-
-  .item {
-    display: inline;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    line-height: 20px;
-    text-align: right;
-
-    .adress {
-      font-style: normal;
-      font-weight: 400;
-      color: #FFFFFF;
-    }
-
-    .phone {
-      font-style: normal;
-      font-weight: 700;
-      color: #FFFFFF;
-    }
-
-    a {
-      text-decoration: none;
-    }
-  }
-}
-
-.header__nav-bar {
-  max-width: 537px;
-  display: flex;
-  justify-content: end;
-  flex-wrap: wrap;
-}
-
-.nav-pages {
-  .pages {
-    .page {
-      padding-right: 15px;
-      display: inline;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 20px;
-      text-align: right;
-
-      a {
-        color: #FFFFFF;
-        background-image: linear-gradient(
-                        transparent 0%,
-                        transparent 90%,
-                        $accent-color 90%,
-                        $accent-color 100%
-        );
-        background-repeat: no-repeat;
-        background-size: 0 100%;
-        background-position-x: center;
-        transition: background-size 300ms;
-      }
-
-      a:hover {
-        transition: ease-in-out 0.3s;
-        text-underline-offset: 3px;
-        color: $accent-color !important;
-        background-size: 100% 100%;
-        background-position-x: center;
-      }
-
-    }
-  }
 }
 
 .main-content-bg {
@@ -641,73 +509,6 @@
   }
 }
 
-.footer {
-  background: $grey-bg-color;
-}
-
-.footer_content {
-
-  font-family: 'Montserrat', sans-serif;
-  width: 83%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 30px;
-
-  .items {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-
-  .item-block {
-    text-align: start;
-    padding-top: 30px;
-  }
-
-  a {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    color: $main-color;
-    transition: ease-in-out 0.3s;
-  }
-
-  .item-link-map:hover, .item-mail:hover {
-    color: $accent-color;
-    transition: ease-in-out 0.3s;
-
-  }
-
-  .item-link-map:before, .item-phone:before, .item-mail:before {
-    color: $grey-text-color;
-    content: '●';
-    padding-right: 6px;
-    padding-left: 6px;
-  }
-
-  .item-link-map {
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 15px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: $active-regular-color;
-
-  }
-
-  .item-company {
-    color: $grey-text-color;
-    text-align: right;
-  }
-
-  .item-mail {
-    color: $active-regular-color;
-    letter-spacing: 1px;
-    font-weight: bold;
-  }
-
-}
-
 @media screen and (max-width: 1440px) {
 
   .experience-section {
@@ -876,12 +677,14 @@
       width: 100%;
       margin-top: 0;
     }
+
     .header__logo {
       .header_content__img_mobile {
         width: 80%;
         padding-top: 20px;
       }
     }
+
     .navbar-toggler {
       background: url(../png/Hamburger.svg) no-repeat center;
       background-size: cover;
